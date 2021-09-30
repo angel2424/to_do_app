@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <title>To-do app</title>
+    </head>
+    <body>
+        <div class="main_container">
+            <header class="title">
+                <h1>TODO</h1>  
+            </header>
+            <section class="main_input">
+                <div class="task_container">
+                    <span></span>
+                    <input class="task_input" type="text" name="task_input" id="task_input" placeholder="Create a new todo...">
+                </div>
+            </section>
+            <section class="task_list">
+                <div class="task_item">
+                    <button class="done_btn"></button>
+                    <p class="task">Walk the dog.</p>
+                    <button class="delete_btn"><img src="images/icon-cross.svg" alt=""></button>
+                </div>
+            </section>
+            <section class="tasks_menu task_container">
+                <button class="clear_done">Clear Completed</button>
+            </section>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
