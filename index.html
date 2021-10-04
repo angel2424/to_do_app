@@ -7,7 +7,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="style.css">
         <title>To-do app</title>
     </head>
@@ -16,21 +15,34 @@
             <header class="title">
                 <h1>TODO</h1>  
             </header>
+
             <section class="main_input">
                 <div class="task_container">
                     <span></span>
                     <input class="task_input" type="text" name="task_input" id="task_input" placeholder="Create a new todo...">
+                    <button class="input_btn">></button>
                 </div>
             </section>
+
+            
             <section class="task_list">
-                <div class="task_item">
-                    <button class="done_btn"></button>
-                    <p class="task">Walk the dog.</p>
-                    <button class="delete_btn"><img src="images/icon-cross.svg" alt=""></button>
+                <div class="task_illustration">
+                    <img src="images/task_illustration.svg" alt="Tasks Illustrations">
+                    <h1>Add your first task!</h1>
                 </div>
-            </section>
-            <section class="tasks_menu task_container">
-                <button class="clear_done">Clear Completed</button>
+                
+                <div class="task_list_container">
+                </div>
+
+                <div class="tasks_menu task_container">
+                    <p class="item_counter">0 items left</p>
+                    <div class="tabs">
+                        <button class="all_tab">All</button>
+                        <button class="active_tab">Active</button>
+                        <button class="done_tab">Completed</button>
+                    </div>
+                    <button class="clear_done">Clear Completed</button>
+                </div>
             </section>
         </div>
         <script src="app.js"></script>
